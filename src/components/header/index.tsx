@@ -17,7 +17,7 @@ const menuItems: MenuItem[] = [
   { label: "Home", link: "/", dropdown: false },
   { label: "About Us", link: "/about-us", dropdown: false },
   { label: "Expertise", link: "/expertise", dropdown: false },
-  { label: "Media & Blogs", link: "/media-blogs", dropdown: false },
+  { label: "Media & Blogs", link: "/media-and-blogs", dropdown: false },
   { label: "Contact Us", link: "/contact-us", dropdown: false },
 ];
 

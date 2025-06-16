@@ -17,7 +17,7 @@ interface QuickLinkItem {
 
 const quicklink: QuickLinkItem[] = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
+  { label: "About Us", href: "/about-us" },
   { label: "Expertise", href: "/expertise" },
   { label: "Contact Us", href: "/contact-us" },
 ];
