@@ -10,7 +10,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-b from-white to-[#f0f9f9] py-14 px-4 md:px-8">
+    <section className="relative bg-gradient-to-b from-white to-[#f0f9f9] py-8 md:py-14 px-4 md:px-8">
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h2 className="text-4xl sm:text-5xl font-bold text-[#47a8a8]">Get In Touch</h2>
         <p className="mt-4 text-gray-600 text-base sm:text-lg">

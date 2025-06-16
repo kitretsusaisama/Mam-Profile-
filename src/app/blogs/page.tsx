@@ -47,7 +47,7 @@ const blogs = [
   },
 ];
 
-const MediaBlogs = () => {
+const Blogs = () => {
   return (
     <section className="py-16 px-4 md:px-10 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -106,4 +106,4 @@ const MediaBlogs = () => {
   );
 };
 
-export default MediaBlogs;
+export default Blogs;

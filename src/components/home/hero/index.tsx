@@ -19,20 +19,30 @@ const Hero = () => {
   const tabs: TabContent[] = [
     {
       id: 1,
-      title: 'Dr. Upinder Kaur',
-      description: 'Masters in Psychology, Therapist, Counsellor',
-      buttonText: 'Book Appointment',
-      image: '/images/child-playing.jpg',
+      title: "Meet Dr. Upinder Kaur",
+      description:
+        "Senior Psychologist with 22+ years of experience in child, adolescent, and adult mental health. Known for compassionate, evidence-based therapy.",
+      buttonText: "Book Appointment",
+      image: "/images/child-playing.jpg",
     },
     {
       id: 2,
-      title: 'Our Specialties',
+      title: "Our Expertise",
       description:
-        'We provide therapeutic support for emotional and mental well-being, guiding patients through stress, anxiety, depression, and various psychological issues. Our counselling is tailored, evidence-based, and confidential.',
-      buttonText: 'Explore Services',
-      image: '/images/happy-couple.jpg',
+        "We specialize in psychological care for anxiety, depression, OCD, ADHD, relationship issues, and more — using proven therapies like CBT, DBT, and play therapy.",
+      buttonText: "Explore Services",
+      image: "/images/happy-couple.jpg",
+    },
+    {
+      id: 3,
+      title: "Trusted Mental Health Care",
+      description:
+        "Dr. Kaur provides therapy at WS Clinic, My Child Therapy, and Kalra Hospital, New Delhi. Confidential, patient-first care for individuals and families.",
+      buttonText: "Contact Us",
+      image: "/images/Stress.jpg",
     },
   ];
+  
 
   useEffect(() => {
     if (!isAutoPlaying) return;

@@ -132,9 +132,9 @@ const Services = () => {
         >
           <motion.h2
             variants={fadeIn}
-            className="text-4xl md:text-5xl font-bold leading-tight"
+            className="text-4xl md:text-5xl font-bold leading-tight text-[#47a8a8]"
           >
-            <h2 className="text-[#47a8a8]">Our Services</h2>
+            Our Services
           </motion.h2>
         </motion.div>
 

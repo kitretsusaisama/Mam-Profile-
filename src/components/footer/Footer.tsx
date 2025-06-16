@@ -21,11 +21,11 @@ const quicklink: QuickLinkItem[] = [
   { label: "Expertise", href: "/expertise" },
   { label: "Contact Us", href: "/contact-us" },
 ];
-const resources: QuickLinkItem[] = [
-  { label: "Media & Blogs", href: "/media-and-blogs" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Privacy Policy", href: "/privacy" },
-];
+// const resources: QuickLinkItem[] = [
+//   { label: "Media & Blogs", href: "/media-and-blogs" },
+//   { label: "FAQ", href: "/faq" },
+//   { label: "Privacy Policy", href: "/privacy" },
+// ];
 
 const socialLink = [
   {
@@ -57,9 +57,9 @@ const Footer = () => {
       className="w-full bg-gray-900 text-gray-200 border-t border-gray-800 shadow-2xl"
       aria-label="Site Footer"
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-0 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-0 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
         {/* Newsletter */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 max-w-md">
           <h4 className="text-xl font-bold uppercase tracking-wide mb-6">
             Health Insights
           </h4>
@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
 
         {/* Resources */}
-        <div>
+        {/* <div>
           <h4 className="text-lg font-semibold uppercase tracking-wide mb-6">
             Resources
           </h4>
@@ -127,7 +127,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* Contact */}
         <address className="not-italic text-sm space-y-5">

@@ -151,9 +151,9 @@ export default function AboutPage() {
         {activeTab === 'approach' && (
           <div className="space-y-16">
             <section className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h3 className="text-4xl font-bold text-gray-900 mb-6">
                 Therapeutic <span className="text-[#47a8a8]">Approach</span>
-              </h2>
+              </h3>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Dr. Upinder Kaur employs a comprehensive, evidence-based approach that is always tailored, respectful, and deeply patient-centered, ensuring each individual receives the most appropriate care for their unique needs.
               </p>
