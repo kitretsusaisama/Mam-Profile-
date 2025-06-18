@@ -1,21 +1,26 @@
 "use client";
 
-import { FaCertificate, FaHospitalAlt, FaShieldAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-const highlights = [
+const features = [
   {
-    icon: <FaCertificate className="text-white text-3xl" />,
+    image: "/images/Child.jpg",
     title: "Certified Psychologist",
     desc: "Trained in developmental & clinical psychology with over 22 years of experience across top institutions like Sir Ganga Ram Hospital.",
   },
   {
-    icon: <FaHospitalAlt className="text-white text-3xl" />,
+    image: "/images/Child.jpg",
     title: "Extensive Experience",
     desc: "Specializing in child, adolescent, and adult mental health with deep expertise in CBT, DBT, and diagnostic assessments.",
   },
   {
-    icon: <FaShieldAlt className="text-white text-3xl" />,
+    image: "/images/Child.jpg",
+    title: "Trusted & Compassionate",
+    desc: "Known for empathetic care, ethical practices, and holistic treatment plans customized for every individual.",
+  },
+  {
+    image: "/images/Child.jpg",
     title: "Trusted & Compassionate",
     desc: "Known for empathetic care, ethical practices, and holistic treatment plans customized for every individual.",
   },
@@ -43,27 +48,26 @@ export default function WhyChooseMe() {
             best possible outcomes for patients
           </p>
         </motion.div>
-
-        {/* Cards Grid */}
-        <div className="grid md:grid-cols-3 gap-10 mb-12">
-          {highlights.map((item, index) => (
-            <div key={index} className="relative bg-white rounded-md p-4 border border-gray-50 overflow-hidden backdrop-blur-sm transition-all duration-300 rounded-tr-[40px]">
-              <div
-                className={`flex items-center justify-center w-20 h-20 rounded-tr-4xl  mb-6 transition-transform duration-300 }`}
-                style={{
-                  background: "linear-gradient(145deg, #47a8a8, #3c9a9a)",
-                  boxShadow:
-                    "0 8px 20px rgba(71,168,168,0.3), inset 0 -2px 4px rgba(0,0,0,0.1)",
-                }}
-              >
-                {item.icon}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-left">
+          {features.map((feature, idx) => (
+            <div
+              key={idx}
+              className="group "
+            >
+              <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
+              <div className="rounded-xl bg-white hover:shadow-lg transition-shadow duration-300">
+                <div className="w-full h-56 relative rounded-xl overflow-hidden mb-4">
+                  <Image
+                    src={feature.image}
+                    alt={feature.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="px-2 pb-4">
+                  <p className="text-sm text-gray-600 tracking-widest">{feature.desc}</p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                {item.title}
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {item.desc}
-              </p>
             </div>
           ))}
         </div>

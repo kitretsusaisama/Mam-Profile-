@@ -14,34 +14,35 @@ type TabContent = {
 const Hero = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [direction, setDirection] = useState(0); // 0 for forward, 1 for backward
+  const [direction, setDirection] = useState(0); 
 
   const tabs: TabContent[] = [
     {
       id: 1,
-      title: "Meet Dr. Upinder Kaur",
+      title: "Adult Mental Health",
       description:
-        "Senior Psychologist with 22+ years of experience in child, adolescent, and adult mental health. Known for compassionate, evidence-based therapy.",
+        "Comprehensive support for stress, anxiety, depression, OCD, PTSD, and bipolar disorder through evidence-based therapies tailored to adult mental health needs.",
       buttonText: "Book Appointment",
-      image: "/images/child-playing.jpg",
+      image: "/images/Happy-couple.jpg",   
     },
     {
       id: 2,
-      title: "Our Expertise",
+      title: "Relationship Counselling",
       description:
-        "We specialize in psychological care for anxiety, depression, OCD, ADHD, relationship issues, and more — using proven therapies like CBT, DBT, and play therapy.",
+        "Expert guidance for couples and individuals facing relationship challenges, communication issues, emotional disconnection, and marital conflict resolution.",
       buttonText: "Explore Services",
-      image: "/images/happy-couple.jpg",
+      image: "/images/happy-couples.jpg",
     },
     {
       id: 3,
-      title: "Trusted Mental Health Care",
+      title: "Child Counselling",
       description:
-        "Dr. Kaur provides therapy at WS Clinic, My Child Therapy, and Kalra Hospital, New Delhi. Confidential, patient-first care for individuals and families.",
+        "Therapy for children with developmental delays, ADHD, autism, behavioral issues, and learning difficulties—using child-friendly, evidence-based approaches.",
       buttonText: "Contact Us",
-      image: "/images/Stress.jpg",
+      image: "/images/Child.jpg",
     },
   ];
+  
   
 
   useEffect(() => {
@@ -114,8 +115,8 @@ const Hero = () => {
                     className="w-full h-full object-cover"
                   />
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#47a8a8]/50 via-[#6f42c1]/40 to-[#ff6b6b]/50 mix-blend-multiply"></div>
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/50"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#47a8a8]/40 via-[#6f42c1]/50 to-[#ff6b6b]/60 mix-blend-multiply"></div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/20"></div>
                 </div>
 
                 {/* Text Content */}
