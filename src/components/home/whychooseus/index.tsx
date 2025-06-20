@@ -5,24 +5,24 @@ import Image from "next/image";
 
 const features = [
   {
-    image: "/images/Child.jpg",
+    image: "/images/Certified-Psychologist.jpg",
     title: "Certified Psychologist",
     desc: "Trained in developmental & clinical psychology with over 22 years of experience across top institutions like Sir Ganga Ram Hospital.",
   },
   {
-    image: "/images/Child.jpg",
+    image: "/images/doctor-with-patient.jpg",
     title: "Extensive Experience",
     desc: "Specializing in child, adolescent, and adult mental health with deep expertise in CBT, DBT, and diagnostic assessments.",
   },
   {
-    image: "/images/Child.jpg",
+    image: "/images/Trusted-Compassionate.webp",
     title: "Trusted & Compassionate",
     desc: "Known for empathetic care, ethical practices, and holistic treatment plans customized for every individual.",
   },
   {
-    image: "/images/Child.jpg",
-    title: "Trusted & Compassionate",
-    desc: "Known for empathetic care, ethical practices, and holistic treatment plans customized for every individual.",
+    image: "/images/Holistic-Healing-Approach.jpg",
+    title: "Holistic Healing Approach",
+    desc: "Combining evidence-based therapy with mindfulness, family involvement, and long-term mental wellness strategies.",
   },
 ];
 
@@ -52,9 +52,9 @@ export default function WhyChooseMe() {
           {features.map((feature, idx) => (
             <div
               key={idx}
-              className="group "
+              className="group"
             >
-              <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
+              <h3 className="text-2xl font-serif font-medium text-white mb-4">{feature.title}</h3>
               <div className="rounded-xl bg-white hover:shadow-lg transition-shadow duration-300">
                 <div className="w-full h-56 relative rounded-xl overflow-hidden mb-4">
                   <Image

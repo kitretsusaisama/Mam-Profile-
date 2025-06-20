@@ -28,10 +28,10 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-gradient-to-r from-[#fff7f0] via-[#fceee6] to-[#fde5d4] py-10 md:py-14 px-4">
+    <section className="bg-gradient-to-r from-[#fff7f0] via-[#fceee6] to-[#fde5d4] py-10 md:py-14 px-2">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-12 underline">
-          Start Exploring Services
+          Our Services
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -52,7 +52,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="p-2 text-left">
-                <h3 className="font-semibold text-gray-900 text-lg mb-1">{service.title}</h3>
+                <h3 className="text-2xl font-serif font-medium text-gray-900 mb-2">{service.title}</h3>
                 <p className="text-sm text-gray-600">{service.desc}</p>
               </div>
             </div>
