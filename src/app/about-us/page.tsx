@@ -18,22 +18,27 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-[#47a8a8] via-[#5bb5b5] to-[#47a8a8] text-white">
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 md:px-6 py-16">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
                 <FaStethoscope className="w-5 h-5" />
                 <span className="text-sm font-medium">Senior Psychologist & Counselling Expert</span>
               </div>
-              
+
               <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent">
                 Dr. Upinder Kaur
               </h1>
-              
+              <img
+                src="https://res.cloudinary.com/dld93nt7d/image/upload/f_auto,q_auto/v1/MCT/assets/doctors/pxbizv1hklh0nampp8ux"
+                alt="Dr. Upinder Kaur"
+                className="mx-auto w-52 h-52 rounded-full object-cover shadow-lg mb-6"
+              />
+
               <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed mb-8">
                 Transforming lives through compassionate mental health care with over 22 years of clinical excellence
               </p>
-              
+
               <div className="flex flex-wrap justify-center gap-6 text-sm">
                 <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
                   <FaClock className="w-4 h-4" />
@@ -47,7 +52,8 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-        
+
+
         {/* Decorative wave */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 120" className="w-full h-16 fill-white">
@@ -67,11 +73,10 @@ export default function AboutPage() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`py-4 px-2 border-b-2 font-medium text-sm whitespace-nowrap transition-colors ${
-                  activeTab === tab.id
+                className={`py-4 px-2 border-b-2 font-medium text-sm whitespace-nowrap transition-colors ${activeTab === tab.id
                     ? 'border-[#47a8a8] text-[#47a8a8]'
                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                }`}
+                  }`}
               >
                 {tab.label}
               </button>
@@ -82,7 +87,7 @@ export default function AboutPage() {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
+
         {/* Overview Tab */}
         {activeTab === 'overview' && (
           <div className="space-y-16">
@@ -96,7 +101,7 @@ export default function AboutPage() {
                     Dr. Upinder Kaur stands as a beacon of compassionate mental health care, bringing over two decades of profound clinical experience to her practice. As the esteemed Director of WS Clinic and the visionary founder of My Child Therapy, she has dedicated her career to enhancing the physical and emotional well-being of individuals across all age groups.
                   </p>
                 </div>
-                
+
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-6 bg-gradient-to-br from-[#47a8a8]/10 to-[#47a8a8]/5 rounded-2xl">
                     <div className="text-3xl font-bold text-[#47a8a8] mb-2">22+</div>
@@ -108,7 +113,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="relative">
                 <div className="bg-gradient-to-br from-[#47a8a8] to-[#5bb5b5] rounded-3xl p-8 text-white">
                   <FaQuoteLeft className="w-12 h-12 mb-6 opacity-80" />
@@ -143,7 +148,7 @@ export default function AboutPage() {
               </div>
             </section>
 
-            <ContactCTA/>
+            <ContactCTA />
           </div>
         )}
 
@@ -183,7 +188,7 @@ export default function AboutPage() {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="space-y-6">
                   <h4 className="text-xl font-semibold text-gray-900 flex items-center gap-3">
                     <FaBrain className="w-6 h-6 text-[#47a8a8]" />

@@ -9,7 +9,7 @@ const About = () => {
         <div className="flex justify-center">
           <div className="rounded-3xl overflow-hidden shadow-xl max-w-md lg:max-w-lg">
             <Image
-              src="https://res.cloudinary.com/dld93nt7d/image/upload/f_auto,q_auto/v1/MCT/assets/doctors/pxbizv1hklh0nampp8ux" // Replace with your image
+              src="https://res.cloudinary.com/dld93nt7d/image/upload/f_auto,q_auto/v1/MCT/assets/doctors/pxbizv1hklh0nampp8ux"
               alt="Upinder Kaur"
               width={600}
               height={800}

@@ -53,7 +53,7 @@ export default function Footer() {
             WS Clinic, I-102, Kirti Nagar,<br /> Delhi, 110015
           </p>
           <p className="text-[#e7b680] text-lg mt-6 font-medium">(+91) 88000-07740</p>
-          <p className="mt-1 text-white/90">upinder@wsclinic.org</p>
+          <p className="mt-1 text-white/90">info@wsclinic.org</p>
         </div>
 
         {/* Pages */}
