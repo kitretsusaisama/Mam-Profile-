@@ -24,7 +24,7 @@ const blogs = [
   },
   {
     category: "Overall Wellness",
-    image: "/images/stress.jpg",
+    image: "/images/Stress.jpg",
     title: "Helping Teens Cope with Academic Stress and Pressure",
     description: "Academic expectations can impact a teen’s emotional well-being. Understand how counseling and stress management techniques can help adolescents thrive mentally.",
     slug: "/blogs/helping-teens-cope-with-academic-stress-and-pressure",

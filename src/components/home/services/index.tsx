@@ -6,12 +6,12 @@ const services = [
   {
     title: 'Adult Mental Health',
     desc: 'Support for anxiety, depression, and emotional challenges in adulthood.',
-    image: '/images/Happy-couple.jpg',
+    image: '/images/happy-couple.jpg',
   },
   {
     title: 'Relationship Counselling',
     desc: 'Guidance to help couples and individuals build healthier relationships.',
-    image: '/images/happy-couples.jpg',
+    image: '/images/Happy-couples.jpg',
   },
   {
     title: 'Child Counselling',

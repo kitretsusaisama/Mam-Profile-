@@ -23,7 +23,7 @@ const Hero = () => {
       description:
         "Comprehensive support for stress, anxiety, depression, OCD, PTSD, and bipolar disorder through evidence-based therapies tailored to adult mental health needs.",
       buttonText: "Book Appointment",
-      image: "/images/Happy-couple.jpg",   
+      image: "/images/happy-couple.jpg",   
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const Hero = () => {
       description:
         "Expert guidance for couples and individuals facing relationship challenges, communication issues, emotional disconnection, and marital conflict resolution.",
       buttonText: "Explore Services",
-      image: "/images/happy-couples.jpg",
+      image: "/images/Happy-couples.jpg",
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ const Hero = () => {
       description:
         "Therapy for children with developmental delays, ADHD, autism, behavioral issues, and learning difficulties—using child-friendly, evidence-based approaches.",
       buttonText: "Contact Us",
-      image: "/images/Child.jpg",
+      image: "/images/child.jpg",
     },
   ];
   
@@ -111,7 +111,6 @@ const Hero = () => {
                     alt={tab.title}
                     width={1920}
                     height={1080}
-                    priority
                     className="w-full h-full object-cover"
                   />
                   {/* Overlay */}
